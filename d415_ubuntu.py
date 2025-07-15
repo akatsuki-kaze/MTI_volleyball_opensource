@@ -174,7 +174,8 @@ if __name__ == "__main__":
                 y = int(center1[1])
                 #(x, y)点的真实深度值
                 dis = aligned_depth_frame.get_distance(x, y)  
-                camera_coordinate = rs.rs2_deproject_pixel_to_point(depth_intrin, [x, y], dis)  #(x, y)点在相机坐标系下的真实值,为一个三维向量。其中camera_coordinate[2]仍为dis,camera_coordinate[0]和camera_coordinate[1]为相机坐标系下的xy真实距离。
+                #(x, y)点在相机坐标系下的真实值,为一个三维向量。其中camera_coordinate[2]仍为dis,camera_coordinate[0]和camera_coordinate[1]为相机坐标系下的xy真实距离。
+                camera_coordinate = rs.rs2_deproject_pixel_to_point(depth_intrin, [x, y], dis)  
                 if camera_coordinate != (0.0,0.0,0.0):
                     last_coordinate = camera_coordinate
                     print(camera_coordinate)
