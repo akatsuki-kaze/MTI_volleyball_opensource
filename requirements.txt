@@ -1,0 +1,10 @@
+numpy==2.2.6
+opencv_contrib_python==4.11.0.86
+opencv_contrib_python_headless==4.11.0.86
+opencv_python==4.10.0.84
+opencv_python_headless==4.7.0.72
+pygame==2.6.1
+pyrealsense2==2.55.1.6486
+pyserial==3.5
+torch==2.7.0.dev20250113+cu126
+ultralytics==8.3.82
