@@ -8,7 +8,7 @@ def calculate_gray_variance(image, bbox):
         x1, y1, x2, y2 = map(int, bbox)
         w, h = x2 - x1, y2 - y1
     # 处理 xywh 格式 (x, y, width, height)
-    elif len(bbox) == 6:  # YOLOv8 的 boxes 可能包含更多信息
+    elif len(bbox) == 6:  
         x1, y1, x2, y2 = map(int, bbox[:4])
         w, h = x2 - x1, y2 - y1
     else:
