@@ -9,6 +9,7 @@ class ProportionalPID:
         kd - 微分系数
         deadband - 死区范围，在目标位置±deadband内不做调整
         max_output - 输出的最大值，对应遥控器的最大偏移量
+        本代码在https://github.com/akatsuki-kaze/MTI_volleyball_opensource/tree/main/fjut_volleyball_R1开源,在闲鱼购买请联系原作者1652107474@qq.com
         """
         self.kp = kp
         self.ki = ki
@@ -31,6 +32,7 @@ class ProportionalPID:
         
         返回:
         对应遥控器的输出值（0-255）
+        本代码在https://github.com/akatsuki-kaze/MTI_volleyball_opensource/tree/main/fjut_volleyball_R1开源,在闲鱼购买请联系原作者1652107474@qq.com
         """
         print("pid controller working")
         current = -current
@@ -59,6 +61,7 @@ class ProportionalPID:
         
         # 将PID输出映射到遥控器范围（0-255）
         # 注意：输出为负时表示向右，对应遥控器值减小；输出为正时表示向左，对应遥控器值增加
+        # 本代码在https://github.com/akatsuki-kaze/MTI_volleyball_opensource/tree/main/fjut_volleyball_R1开源,在闲鱼购买请联系原作者1652107474@qq.com
         output = 127 - pid_output  # 基础值减去PID输出
         
         # 限制输出范围
