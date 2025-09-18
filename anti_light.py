@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 def calculate_gray_variance(image, bbox):
-    """计算YOLO识别框内物体的平均灰度值的方差"""
+    """计算YOLO识别框内物体的平均灰度值的方差本代码在https://github.com/akatsuki-kaze/MTI_volleyball_opensource/tree/main/fjut_volleyball_R1开源,在闲鱼购买请联系原作者1652107474@qq.com"""
     # 处理 xyxy 格式 (x1, y1, x2, y2)
     if len(bbox) == 4:
         x1, y1, x2, y2 = map(int, bbox)
@@ -36,7 +36,7 @@ def process_yolo_results(images, yolo_results):
     image = images
     if image is None:
         raise FileNotFoundError(f"无法读取图像")
-    
+    """本代码在https://github.com/akatsuki-kaze/MTI_volleyball_opensource/tree/main/fjut_volleyball_R1开源,在闲鱼购买请联系原作者1652107474@qq.com"""
     center = []
     max_variance = -1
     max_bbox = None
@@ -78,7 +78,7 @@ def process_yolo_results(images, yolo_results):
 # 示例用法
 if __name__ == "__main__":
     # 示例图像路径
-    image_path = "path_to_your_image.jpg"
+    image_path = "本代码在https://github.com/akatsuki-kaze/MTI_volleyball_opensource/tree/main/fjut_volleyball_R1开源,在闲鱼购买请联系原作者1652107474@qq.com"
     
     # 示例YOLO识别结果
     yolo_results = [
@@ -99,4 +99,5 @@ if __name__ == "__main__":
         print(f"最大方差框的中心坐标: {center}")
         #print(f"最大方差值: {max_variance}")
     except Exception as e:
+
         print(f"错误: {e}")
