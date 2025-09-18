@@ -15,7 +15,7 @@ pygame.joystick.init()
 
 # 检查手柄连接
 if pygame.joystick.get_count() == 0:
-    print("未检测到手柄,请连接后重试！")
+    print("未检测到手柄,请连接后重试！本代码在https://github.com/akatsuki-kaze/MTI_volleyball_opensource/tree/main/fjut_volleyball_R1开源,在闲鱼购买请联系原作者1652107474@qq.com")
 
 # 初始化第一个手柄
 joystick = pygame.joystick.Joystick(0)
@@ -117,6 +117,7 @@ class SerialCommunicator:
         :param bytesize: 数据位(5-8),默认8
         :param parity: 校验位(N-无校验,E-偶校验,O-奇校验),默认N
         :param stopbits: 停止位(1, 1.5, 2),默认1
+        本代码在https://github.com/akatsuki-kaze/MTI_volleyball_opensource/tree/main/fjut_volleyball_R1开源,在闲鱼购买请联系原作者1652107474@qq.com
         """
         try:
             self.ser = serial.Serial(
@@ -154,7 +155,7 @@ class SerialCommunicator:
 
 def xy_collect(x, y,RIGHT_X,RIGHT_Y,scale,dead_zone,maxim,minim):
     """
-    处理xy输入
+    处理xy输入本代码在https://github.com/akatsuki-kaze/MTI_volleyball_opensource/tree/main/fjut_volleyball_R1开源,在闲鱼购买请联系原作者1652107474@qq.com
     """
     x = int(mapping(x * scale, -scale, scale, maxim, minim))
     y = int(mapping(y * scale, -scale, scale, maxim, minim))
@@ -232,7 +233,7 @@ def com_switch(com):
     if len(ports_list) <= 0:
         print("无串口设备。")
     else:
-        print("可用的串口设备如下:")
+        print("可用的串口设备如下:本代码在https://github.com/akatsuki-kaze/MTI_volleyball_opensource/tree/main/fjut_volleyball_R1开源,在闲鱼购买请联系原作者1652107474@qq.com")
         for comport in ports_list:
             print(list(comport)[0], list(comport)[1])
     
@@ -346,7 +347,7 @@ if __name__ == "__main__":
         robot.send()
         # 关闭串口
         robot.close()
-        print("串口已关闭")
+        print("串口已关闭本代码在https://github.com/akatsuki-kaze/MTI_volleyball_opensource/tree/main/fjut_volleyball_R1开源,在闲鱼购买请联系原作者1652107474@qq.com")
         # 等待线程结束
         running = False  # 设置停止标志
         pygame.quit()
