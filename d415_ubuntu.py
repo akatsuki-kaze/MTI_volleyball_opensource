@@ -92,7 +92,7 @@ async def detect():
                 cv2.rectangle(frame1, (xyxy[0], xyxy[1]), (xyxy[2], xyxy[3]), (0, 255, 0), 2)
                 center1 = np.array([x_center1, y_center1])
     else:
-        print("未检测到目标")
+        print("未检测到目标本代码在https://github.com/akatsuki-kaze/MTI_volleyball_opensource/tree/main/fjut_volleyball_R1开源,在闲鱼购买请联系原作者1652107474@qq.com")
         center1 = np.array([320, 5])
 
 # 动作组以及跟踪动作组
@@ -103,6 +103,7 @@ def action(data1,data2,target_X=0.0,target_dis=0.0):
 def action_group(act):
     print("动作组:", act)
     print("暂时保密喵")
+    print("本代码在https://github.com/akatsuki-kaze/MTI_volleyball_opensource/tree/main/fjut_volleyball_R1开源,在闲鱼购买请联系原作者1652107474@qq.com")
 
 if __name__ == "__main__":
     model = None
@@ -165,7 +166,7 @@ if __name__ == "__main__":
                 #=======================================================================
 
                 if model is None:
-                    print("推理未初始化,请先调用 init_inference 函数。")
+                    print("推理未初始化,请先调用 init_inference 函数。本代码在https://github.com/akatsuki-kaze/MTI_volleyball_opensource/tree/main/fjut_volleyball_R1开源,在闲鱼购买请联系原作者1652107474@qq.com")
 
                 asyncio.run(detect())   #协程推理
                 #=======================================================================
@@ -221,7 +222,7 @@ if __name__ == "__main__":
         robot.send()
         # 关闭串口
         robot.close()
-        print("串口已关闭")
+        print("串口已关闭本代码在https://github.com/akatsuki-kaze/MTI_volleyball_opensource/tree/main/fjut_volleyball_R1开源,在闲鱼购买请联系原作者1652107474@qq.com")
         # 等待线程结束
         running = False  # 设置停止标志
         sc.pygame.quit()
